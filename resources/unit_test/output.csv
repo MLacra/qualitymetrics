@@ -1,0 +1,2 @@
+MAPPING FILENAME,Mapping cardinality,TL - Precision,TL - Recall,TL - F-measure,TL - true positives,TL - False positives, TL - False negatives,TL - incomplete TPs, TL - incomplete FPs, TL - incomplete FNs,CL - Precision,CL - Recall,CL - F-measure,CL - True positives, CL - True negatives,CL - False positives,CL - False negatives
+"/Users/lara/git/Tests_generator/Tests_generator/resources/statistics/unit_test/mapping.sql",8,0.5714285714285714,0.6666666666666666,0.6153846153846154,4,3,2,2 (50%),2 (67%),1 (50%),0.6153846153846154,0.64,0.6274509803921569,16,1,10,9

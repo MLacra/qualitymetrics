@@ -1,0 +1,4 @@
+,, complete , incomplete
+"mapping.sql",True positive tuples,2,2
+,False positive tuples,1,2
+,False negative tuples,1,1

@@ -1,0 +1,2 @@
+MAPPING FILENAME,"	TL - Precision","	TL - Recall","	TL - F-measure","	TL - true positives","	TL - False positives","	 TL - False negatives","	CL - Precision","	CL - Recall","	CL - F-measure","	CL - True positives","	 CL - True negatives","	CL - False positives","	CL - False negatives"
+mapping.sql,"	0.571428571","	0.666666667","	0.615384615","	4","	3","	2","	0.615384615","	0.64","	0.62745098","	16","	1","	10","	9"
