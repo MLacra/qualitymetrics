@@ -38,7 +38,7 @@ Note:
 
 * _output CSV file_ : The filepath to the desired output CSV file.
 
-![Classify messages example](figures/example.png)
+![Classify messages example](plot_example.png)
 
 ## Output Files
 
