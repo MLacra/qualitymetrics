@@ -38,7 +38,7 @@ Note:
 
 * _output CSV file_ : The filepath to the desired output CSV file.
 
-![Classify messages example](plot_example.png)
+
 
 ## Output Files
 
@@ -56,6 +56,8 @@ Note:
         11. TL - incomplete FNs: tuple level incomplete false negatives. Implicitly, the number of *full* false negative tuples, i.e., with all values missing = the value in col #8 - #11.	
         12->18. The same examplantion as in 3->8 but at attribute (cell) level. 	 
 * Another file is produced with the name __output_file_name_plot.csv__ where it is easy to select the produced data so as to compute a plot such as the one bellow.
+
+![Plot example for measuring complete/incomplete tuples in the tested dataset](plot_example.png)
 
 ## Running the App
 
