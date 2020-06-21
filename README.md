@@ -55,7 +55,7 @@ Note:
         10. TL - incomplete FPs: tuple level incomplete false positives. Implicitly, the number of *full* false positive tuples, i.e., with all values different from the ground truth = the value in col #7 - #10.	 	 
         11. TL - incomplete FNs: tuple level incomplete false negatives. Implicitly, the number of *full* false negative tuples, i.e., with all values missing = the value in col #8 - #11.	
         12->18. The same examplantion as in 3->8 but at attribute (cell) level. 	 
-* Another file is produced with the name __output_file_name_plot.csv__ where it is easy to select the produced data so as to compute a plot such as the one bellow.
+* Another file is produced with the name __output_file_name_plot.csv__ where it is easy to select the produced data so as to compute a plot such as the one below.
 
 ![Plot example for measuring complete/incomplete tuples in the tested dataset](plot_example.png)
 
@@ -72,7 +72,7 @@ An example scenario can be found in __resources/unit_test__. The main() method i
         3. __mapping.sql__ - the SQL that produces the tested dataset (expected in the input)
         4. __insert_rows_unit_test.sql__ - the SQL script that will create and populate the test database for this small scenario. This file is provided just for test purposes. It is not expected as input. (not expected in the input)
 
-* In __resources/unit_test - run files generated__  this is a folder that contains the generated files for the scenario in __resources/unit_test__:
+* __resources/unit_test - run files generated__ : this is a folder that contains the generated files for the scenario in __resources/unit_test__:
         1. __output_file_name_plot.csv__ : as explained above
         2. __output_file.csv__: as explained above
         3. __expected_statistics.csv__: this is a file that is not generated but was provided for test comparison purposes between what we got in __output.csv__ and what was expected (integration test).
