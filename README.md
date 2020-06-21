@@ -11,13 +11,16 @@ __At attribute (cell) level:__
 
 __At tuple (row) level:__
 Given that a tuple typically has several attribute values, the correctness of the tuple is computed based on the dominant correctness label among the labels for its attribute values.
-* A \textit{true positive} is an output tuple where all or most of its attribute values are correct, i.e., a \textit{TP} or a \textit{TN} at the attribute level.
-* A \textit{false positive} is an output tuple where all or most of its attribute values are not nulls, but incorrect, i.e., not as expected in the ground truth.
-* A \textit{false negative} is an output tuple where all or most of its values are missing, i.e., are nulls. 
-* True negatives} -- We do not measure the true negative tuples as these would represent the number of correctly eliminated tuples and this is not the focus of the evaluation.
+* A true positive is an output tuple where all or most of its attribute values are correct, i.e., a *TP* or a *TN* at the attribute level.
+* A false positive is an output tuple where all or most of its attribute values are not nulls, but incorrect, i.e., not as expected in the ground truth.
+* A false negative is an output tuple where all or most of its values are missing, i.e., are nulls. 
+* True negatives -- We do not measure the true negative tuples as these would represent the number of correctly eliminated tuples and this is not the focus of the evaluation.
 
 __Level of completeness of tuples.__
 The correctness of a tuple is determined by using the dominant correctness in its attribute values, so we say that a tuple is \textit{complete} if all its attribute values have the same type of correctness label, and \textit{incomplete} if they are mixed.
+
+
+The two datasets (tested and ground truth) are the results of SQL scripts that are given as input, i.e., they don't need to be materialized in the database (more details below). This is particularly useful as it is efficient if the tested datasets change at a very fast pace so it is beneficial not to have to materalize different views of the same underlying sources.
 
 ## Installation Requirements
 
