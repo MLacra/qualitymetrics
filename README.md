@@ -46,18 +46,18 @@ Note:
 ## Output Files
 
 * The above mentioned _output_ file will contain the CSV data. The CSV data entails 18 columns:
-        1. MAPPING FILENAME: contains the name of the SQL file that was run to obtain the __test__  datasets.
-        2. Mapping cardinality: the size of the __test__  dataset on that line.
-        3. TL - Precision: tuple level precision.
-        4. TL - Recall: tuple level recall.
-        5. TL - F-measure: tuple level F-measure.
-        6. TL - true positives: total number of true positives - tuple level.
-        7. TL - False positives: total number of false positives - tuple level.	 
-        8. TL - False negatives: total number of false negatives - tuple level.	 
-        9. TL - incomplete TPs: tuple level incomplete true positives. Implicitly, the number of *full* true positive tuples, i.e., with all values as in the ground truth = the value in col #6 - #9.	 
-        10. TL - incomplete FPs: tuple level incomplete false positives. Implicitly, the number of *full* false positive tuples, i.e., with all values different from the ground truth = the value in col #7 - #10.	 	 
-        11. TL - incomplete FNs: tuple level incomplete false negatives. Implicitly, the number of *full* false negative tuples, i.e., with all values missing = the value in col #8 - #11.	
-        12->18. The same examplantion as in 3->8 but at attribute (cell) level. 	 
+1. MAPPING FILENAME: contains the name of the SQL file that was run to obtain the __test__  datasets.
+2. Mapping cardinality: the size of the __test__  dataset on that line.
+3. TL - Precision: tuple level precision.
+4. TL - Recall: tuple level recall.
+5. TL - F-measure: tuple level F-measure.
+6. TL - true positives: total number of true positives - tuple level.
+7. TL - False positives: total number of false positives - tuple level.	 
+8. TL - False negatives: total number of false negatives - tuple level.	 
+9. TL - incomplete TPs: tuple level incomplete true positives. Implicitly, the number of *full* true positive tuples, i.e., with all values as in the ground truth = the value in col #6 - #9.	 
+10. TL - incomplete FPs: tuple level incomplete false positives. Implicitly, the number of *full* false positive tuples, i.e., with all values different from the ground truth = the value in col #7 - #10.	 	 
+11. TL - incomplete FNs: tuple level incomplete false negatives. Implicitly, the number of *full* false negative tuples, i.e., with all values missing = the value in col #8 - #11.	
+12. -> 18. The same examplantion as in 3->8 but at attribute (cell) level. 	 
 * Another file is produced with the name __output_file_name_plot.csv__ where it is easy to select the produced data so as to compute a plot such as the one below.
 
 ![Plot example for measuring complete/incomplete tuples in the tested dataset](plot_example.png)
@@ -70,15 +70,15 @@ An example scenario can be found in __resources/unit_test__. The main() method i
 ## Test files 
 
 * In __resources/unit_test__ there is a small test to populate a small database and test the app:
-        1. __input.csv__ - the input file (expected in the input)
-        2. __ground_truth.sql__ - the SQL that produces the ground-truth dataset (expected in the input)
-        3. __mapping.sql__ - the SQL that produces the tested dataset (expected in the input)
-        4. __insert_rows_unit_test.sql__ - the SQL script that will create and populate the test database for this small scenario. This file is provided just for test purposes. It is not expected as input. (not expected in the input)
+1. __input.csv__ - the input file (expected in the input)
+2. __ground_truth.sql__ - the SQL that produces the ground-truth dataset (expected in the input)
+3. __mapping.sql__ - the SQL that produces the tested dataset (expected in the input)
+4. __insert_rows_unit_test.sql__ - the SQL script that will create and populate the test database for this small scenario. This file is provided just for test purposes. It is not expected as input. (not expected in the input)
 
 * __resources/unit_test - run files generated__ : this is a folder that contains the generated files for the scenario in __resources/unit_test__:
-        1. __output_file_name_plot.csv__ : as explained above
-        2. __output_file.csv__: as explained above
-        3. __expected_statistics.csv__: this is a file that is not generated but was provided for test comparison purposes between what we got in __output.csv__ and what was expected (integration test).
+1. __output_file_name_plot.csv__ : as explained above
+2. __output_file.csv__: as explained above
+3. __expected_statistics.csv__: this is a file that is not generated but was provided for test comparison purposes between what we got in __output.csv__ and what was expected (integration test).
 
 ## Licensing, Authors, Acknowledgements
 
