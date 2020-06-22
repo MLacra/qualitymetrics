@@ -17,7 +17,7 @@ Given that a tuple typically has several attribute values, the correctness of th
 * True negatives -- We do not measure the true negative tuples as these would represent the number of correctly eliminated tuples and this is not the focus of the evaluation.
 
 __Level of completeness of tuples.__
-The correctness of a tuple is determined by using the dominant correctness in its attribute values, so we say that a tuple is \textit{complete} if all its attribute values have the same type of correctness label, and \textit{incomplete} if they are mixed.
+The correctness of a tuple is determined by using the dominant correctness in its attribute values, so we say that a tuple is _complete_ if all its attribute values have the same type of correctness label, and _incomplete_ if they are mixed.
 
 
 The two datasets (tested and ground truth) are the results of SQL scripts that are given as input, i.e., they don't need to be materialized in the database (more details below). This is particularly useful as it is efficient if the tested datasets change at a very fast pace so it is beneficial not to have to materalize different views of the same underlying sources.
